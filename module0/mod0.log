@@ -1,0 +1,54 @@
+Script started on Sat, Jan 20, 2018  9:52:40 PM
+]0;~/Intro2GPU/EN605.417.FA/module0
+[32mDavid@DESKTOP-TAK59S5 [33m~/Intro2GPU/EN605.417.FA/module0[0m
+$ g++ hello_[Kworld.cpp 
+]0;~/Intro2GPU/EN605.417.FA/module0
+[32mDavid@DESKTOP-TAK59S5 [33m~/Intro2GPU/EN605.417.FA/module0[0m
+$ a.[K[K./a.exe 
+Hello World!
+]0;~/Intro2GPU/EN605.417.FA/module0
+[32mDavid@DESKTOP-TAK59S5 [33m~/Intro2GPU/EN605.417.FA/module0[0m
+$ rm a.exe 
+]0;~/Intro2GPU/EN605.417.FA/module0
+[32mDavid@DESKTOP-TAK59S5 [33m~/Intro2GPU/EN605.417.FA/module0[0m
+$ nvcc.exe hello-world.cu 
+hello-world.cu
+   Creating library a.lib and object a.exp
+]0;~/Intro2GPU/EN605.417.FA/module0
+[32mDavid@DESKTOP-TAK59S5 [33m~/Intro2GPU/EN605.417.FA/module0[0m
+$ ./a.exe
+Hello World!
+]0;~/Intro2GPU/EN605.417.FA/module0
+[32mDavid@DESKTOP-TAK59S5 [33m~/Intro2GPU/EN605.417.FA/module0[0m
+$ rm a.*
+]0;~/Intro2GPU/EN605.417.FA/module0
+[32mDavid@DESKTOP-TAK59S5 [33m~/Intro2GPU/EN605.417.FA/module0[0m
+$ gcc hello_world_cl.c -LC:/Windows/System32/ -lOpenCL
+[01m[Khello_world_cl.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Khello_world_cl.c:66:2:[m[K [01;35m[Kwarning: [m[K‘[01m[KclCreateCommandQueue[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  [01;35m[Kcommands[m[K = clCreateCommandQueue(context, device_id, 0, &err);
+  [01;35m[K^~~~~~~~[m[K
+In file included from [01m[Khello_world_cl.c:13:0[m[K:
+[01m[K/usr/include/CL/cl.h:1443:1:[m[K [01;36m[Knote: [m[Kdeclared here
+ [01;36m[KclCreateCommandQueue[m[K(cl_context                     /* context */,
+ [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Khello_world_cl.c:114:2:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Ksleep[m[K’ [[01;35m[K-Wimplicit-function-declaration[m[K]
+  [01;35m[Ksleep[m[K(1); // Leopard pty bug workaround.
+  [01;35m[K^~~~~[m[K
+]0;~/Intro2GPU/EN605.417.FA/module0
+[32mDavid@DESKTOP-TAK59S5 [33m~/Intro2GPU/EN605.417.FA/module0[0m
+$ ./a.exe 
+Hello World!
+]0;~/Intro2GPU/EN605.417.FA/module0
+[32mDavid@DESKTOP-TAK59S5 [33m~/Intro2GPU/EN605.417.FA/module0[0m
+$ rm a.*
+]0;~/Intro2GPU/EN605.417.FA/module0
+[32mDavid@DESKTOP-TAK59S5 [33m~/Intro2GPU/EN605.417.FA/module0[0m
+$ ls
+clDeviceQuery.cpp  hello_world_cl.c  helloworld.cpp  hello-world.cu  README.md  verify.sh
+]0;~/Intro2GPU/EN605.417.FA/module0
+[32mDavid@DESKTOP-TAK59S5 [33m~/Intro2GPU/EN605.417.FA/module0[0m
+$ exit
+exit
+
+Script done on Sat, Jan 20, 2018  9:54:13 PM
